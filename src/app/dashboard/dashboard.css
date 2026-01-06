@@ -1,0 +1,51 @@
+.poll-container {
+  max-width: 420px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.option {
+  margin-bottom: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 14px;
+  background: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  transition: width 0.4s ease-in-out;
+}
+
+.stats {
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.total {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}

@@ -1,0 +1,19 @@
+<div class="poll-container">
+  <h2>VOTING POLL</h2>
+  <div class="option" *ngFor="let option of options">
+    <button (click)="vote(option)">{{option.label}}</button>
+    <div class="progress-bar">
+      <div
+        class="progress-fill"
+        [style.width.%]="getPercentage(option)"
+        [style.background]="option.color"
+      ></div>
+    </div>
+
+    <div class="stats">
+      {{ option.votes }} votes • {{ getPercentage(option) }}%
+    </div>
+  </div>
+
+  <div class="total">Total Votes: {{totalVotes}}</div>
+</div>
